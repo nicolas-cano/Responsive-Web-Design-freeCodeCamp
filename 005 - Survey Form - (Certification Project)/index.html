@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <h1 id="title">Registration Form</h1>
+</head>
+<body>
+    <p id="description">Please fill out this form with the required information</p>
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+        <label for="name" id="name-label">Enter Your Name: 
+          <input id="name" name="name" type="text" required placeholder="Enter your name" />
+            <input id="name" name="name" type="text" required />
+        </label>
+        <label for="email" id="email-label">Enter Your Email: 
+          <input id="email" name="email" type="email" required placeholder="Enter your email" />
+            <input id="email" name="email" type="email" required />
+        </label>
+        <label for="number" id="number-label">Enter a Number: 
+          <input id="number" name="number" type="number" min="1" max="10" required placeholder="Enter a number between 1 and 10" />
+            <input id="number" name="number" type="number" min="1" max="10" required />
+        </label>
+        <select id="dropdown" name="dropdown">
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+        </select>
+        <label for="radio">Select an Option: 
+            <input type="radio" id="radio1" name="radio" value="radio1">
+            <label for="radio1">Option 1</label>
+            <input type="radio" id="radio2" name="radio" value="radio2">
+            <label for="radio2">Option 2</label>
+        </label>
+        <label for="checkbox1">Option 1
+            <input type="checkbox" id="checkbox1" name="checkbox" value="checkbox1">
+        </label>
+        <label for="checkbox2">Option 2
+            <input type="checkbox" id="checkbox2" name="checkbox" value="checkbox2">
+        </label>
+        <label for="comments">Additional Comments: 
+            <textarea id="comments" name="comments" rows="3" placeholder="Enter your comments here"></textarea>
+        </label>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
+</html>
